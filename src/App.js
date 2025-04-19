@@ -6,7 +6,7 @@ import WhatWeOffer from "./Pages/WhatWeOffer";
 // import ContactForm from "./Pages/ContactForm";
 // import FAQ from "./Pages/FAQ";
 // import Footer from "./Pages/footer";
-// import WhyBusinessesChooseUs from "./Pages/WhyChooseUs";
+import WhyBusinessesChooseUs from "./Pages/WhyChooseUs";
 function App() {
   return (
     
@@ -14,7 +14,7 @@ function App() {
       <Navbar/>
       <HeroSection/>
       <WhatWeOffer/>
-      {/* <WhyBusinessesChooseUs/> */}
+      <WhyBusinessesChooseUs/>
       {/* <Testimonials/>
       <ContactForm/>
       <FAQ/>
