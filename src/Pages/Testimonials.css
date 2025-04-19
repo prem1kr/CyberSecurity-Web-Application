@@ -1,0 +1,24 @@
+/* Testimonials.css */
+
+/* Add spacing between each slick-slide */
+.testimonial-card {
+    margin: 0 16px; /* 32px gap between cards (16px on each side) */
+    padding-left: 30px;
+  }
+  
+  /* Optional: Adjust slide container to ensure overflow is handled */
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Slick dots styling */
+  .slick-dots li button:before {
+    color: white !important;
+    opacity: 0.5;
+  }
+  .slick-dots li.slick-active button:before {
+    color: white !important;
+    opacity: 1;
+  }
+  

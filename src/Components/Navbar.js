@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
-
+// import video from '../assets/videoplayback.mp4';
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [activeMenu, setActiveMenu] = React.useState('');
@@ -40,14 +40,37 @@ const Navbar = () => {
 
   return (
     <>
+
+     {/* <Box sx={{ position: 'relative', minHeight: '10vh', overflow: 'hidden' }}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: 1,
+            }}
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>  */}
+
       <AppBar
-        position="static"
+        position = "relative"
+        // position="absolute"
         sx={{
-          background: 'linear-gradient(135deg, #0e0e2c 0%, #300446 100%)',
+          background: 'transparent',
           boxShadow: 'none',
           px: 2,
         }}
       >
+        
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
           {/* Logo */}
           <Typography
@@ -198,6 +221,7 @@ const Navbar = () => {
           </Button>
         </Box>
       </Drawer>
+      {/* </Box> */}
     </>
   );
 };

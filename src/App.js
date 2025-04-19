@@ -2,11 +2,12 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Pages/Hero";
 import WhatWeOffer from "./Pages/WhatWeOffer";
-// import Testimonials from "./Pages/Testimonials";
-// import ContactForm from "./Pages/ContactForm";
-// import FAQ from "./Pages/FAQ";
-// import Footer from "./Pages/footer";
+import Testimonials from "./Pages/Testimonials";
+import ContactForm from "./Pages/ContactForm";
+import FAQ from "./Pages/FAQ";
+import Footer from "./Pages/footer";
 import WhyBusinessesChooseUs from "./Pages/WhyChooseUs";
+import Partners from "./Pages/partners";
 function App() {
   return (
     
@@ -15,10 +16,11 @@ function App() {
       <HeroSection/>
       <WhatWeOffer/>
       <WhyBusinessesChooseUs/>
-      {/* <Testimonials/>
-      <ContactForm/>
+      <Testimonials/>
       <FAQ/>
-      <Footer/> */}
+      <Partners/>
+      <ContactForm/>
+      <Footer/>
     
     </div>
   );
