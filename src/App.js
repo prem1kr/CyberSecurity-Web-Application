@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
 import HeroSection from "./Pages/Hero";
 import WhatWeOffer from "./Pages/WhatWeOffer";
 import Testimonials from "./Pages/Testimonials";
@@ -12,7 +12,7 @@ function App() {
   return (
     
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <HeroSection/>
       <WhatWeOffer/>
       <WhyBusinessesChooseUs/>
