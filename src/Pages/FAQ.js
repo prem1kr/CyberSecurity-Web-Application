@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import faqImage from "../assets/FQ.png";
+import { motion } from "framer-motion"; // Import motion for animation
 
 const questions = [
   "How Can IT Companies Help Small Businesses?",
@@ -37,53 +38,66 @@ const FAQ = () => (
       }}
     >
       {/* Left - FAQ Section */}
-      <Box sx={{ flexBasis: "44%", flexShrink: 0 }}>
+      <motion.div
+        style={{ flexBasis: "44%", flexShrink: 0 }}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Typography variant="h4" fontWeight="bold" gutterBottom sx={{ mb: 4 }}>
           Frequently Asked Questions
         </Typography>
 
         {questions.map((q, i) => (
-          <Accordion
+          <motion.div
             key={i}
-            sx={{
-              background: "none",
-              color: "#eee",
-              mb: 2,
-              borderBottom: "1px solid rgba(134, 134, 134, 0.3)",
-              borderRadius: "8px",
-              "& .MuiSvgIcon-root": {
-                color: "#b39ddb",
-              },
-            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: i * 0.2 }} // Delay to animate each accordion
           >
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>{q}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography sx={{ color: "#ccc" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+            <Accordion
+              sx={{
+                background: "none",
+                color: "#eee",
+                mb: 2,
+                borderBottom: "1px solid rgba(134, 134, 134, 0.3)",
+                borderRadius: "8px",
+                "& .MuiSvgIcon-root": {
+                  color: "#b39ddb",
+                },
+              }}
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography>{q}</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography sx={{ color: "#ccc" }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </motion.div>
         ))}
-      </Box>
+      </motion.div>
 
       {/* Right - Image Section */}
-      <Box
-        sx={{
-          flexBasis: "45%",
-          flexShrink: 0,
-          textAlign: "center",
-
-        }}
+      <motion.div
+        style={{ flexBasis: "45%", flexShrink: 0, textAlign: "center" }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
         <Box
           component="img"
           src={faqImage}
           alt="FAQ Illustration"
-          sx={{ maxWidth: "80%", height: "auto" }}
+          sx={{
+            maxWidth: "80%",
+            height: "auto",
+            borderRadius: "12px", // Rounded corners for the image
+          }}
         />
-      </Box>
+      </motion.div>
     </Box>
   </Box>
 );

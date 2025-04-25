@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
+import { motion } from "framer-motion"; // Import motion for animation
 
 // Import logos
 import logo1 from "../assets/waverio.png";
@@ -58,23 +59,31 @@ const Partners = () => (
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            transition: "transform 0.3s ease",
-            "&:hover": {
-              transform: "scale(1.1)",
-            },
           }}
         >
-          <Box
-            component="img"
-            src={logo.src}
-            alt={logo.name}
-            sx={{
-              height: { xs: 60, sm: 100, md: 120 },
-              objectFit: "contain",
-              filter: "drop-shadow(0 0 10px rgba(255,255,255,0.1))",
-              maxWidth: "100%",
-            }}
-          />
+          {/* Motion component for animation */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: i * 0.1 }}
+            style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+          >
+            <Box
+              component="img"
+              src={logo.src}
+              alt={logo.name}
+              sx={{
+                height: { xs: 60, sm: 100, md: 120 },
+                objectFit: "contain",
+                filter: "drop-shadow(0 0 10px rgba(255,255,255,0.1))",
+                maxWidth: "100%",
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "scale(1.1)",
+                },
+              }}
+            />
+          </motion.div>
         </Grid>
       ))}
     </Grid>
