@@ -9,6 +9,8 @@ import Footer from "./Pages/footer";
 import WhyBusinessesChooseUs from "./Pages/WhyChooseUs";
 import Partners from "./Pages/partners";
 import SecurityServicesPage from "./Pages/SecurityServicesPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     
@@ -23,6 +25,13 @@ function App() {
       <Partners/>
       <ContactForm/>
       <Footer/>
+      <Router>
+      <Routes>
+        <Route path="/contactform" element={<ContactForm />} />
+       
+      </Routes>
+    </Router>
+
     
     </div>
   );

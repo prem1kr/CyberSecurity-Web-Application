@@ -118,7 +118,7 @@ const ContactForm = () => {
           sx={{ mb: 4, fontSize: "14px" }}
         >
           For more information about any of our services or to request a quote,
-          contact us today! We look forward to hearing from you – and we can’t
+          contact us today! We look forward to hearing from you – and we can't
           wait to share our ideas to help your business succeed.
         </Typography>
         <Box
@@ -135,12 +135,7 @@ const ContactForm = () => {
       </Box>
 
       {/* Right Section */}
-      <Box
-        sx={{
-          width: isMobile ? "100%" : "40%",
-          mt: isMobile ? 4 : "-100px",
-        }}
-      >
+      <Box sx={{ width: isMobile ? "100%" : "40%", mt: isMobile ? 4 : "-100px" }}>
         <Paper
           elevation={0}
           sx={{
@@ -151,7 +146,6 @@ const ContactForm = () => {
           }}
         >
           <Grid container spacing={3}>
-            {/* Name Fields */}
             <Box
               sx={{
                 width: "100%",
@@ -183,7 +177,6 @@ const ContactForm = () => {
               </Grid>
             </Box>
 
-            {/* Other Fields */}
             <Box
               sx={{
                 width: "100%",
@@ -251,8 +244,7 @@ const ContactForm = () => {
                     boxShadow: "none",
                     opacity: isFormComplete ? 1 : 0.6,
                     "&:hover": {
-                      background:
-                        "linear-gradient(to right, #4400a2, #d100c1)",
+                      background: "linear-gradient(to right, #4400a2, #d100c1)",
                     },
                   }}
                 >
@@ -264,17 +256,75 @@ const ContactForm = () => {
         </Paper>
       </Box>
 
-      {/* Success Dialog */}
-      <Dialog open={openPopup} onClose={handleClosePopup}>
-        <DialogTitle>Query Submitted</DialogTitle>
-        <DialogContent>
-          <Typography>
-            Your query has been successfully submitted. We'll get back to you
-            shortly!
+      {/* Stylish Transparent Dialog */}
+      <Dialog
+        open={openPopup}
+        onClose={handleClosePopup}
+        PaperProps={{
+          sx: {
+            backdropFilter: "blur(16px)",
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            color: "#fff",
+            borderRadius: "16px",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 8px 40px rgba(0, 0, 0, 0.5)",
+            minWidth: isMobile ? "90%" : "420px",
+            transition: "all 0.3s ease",
+          },
+        }}
+      >
+        <DialogTitle
+          sx={{
+            fontWeight: 700,
+            fontSize: "1.4rem",
+            color: "#fff",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.15)",
+            px: 3,
+            py: 2,
+            textAlign: "center",
+          }}
+        >
+          ✨ Query Submitted
+        </DialogTitle>
+
+        <DialogContent sx={{ px: 3, py: 2 }}>
+          <Typography
+            sx={{
+              color: "rgba(255, 255, 255, 0.85)",
+              fontSize: "1rem",
+              textAlign: "center",
+              lineHeight: 1.6,
+            }}
+          >
+            Thanks for reaching out! We’ll get back to you very soon.
           </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClosePopup} color="primary">
+
+        <DialogActions
+          sx={{
+            justifyContent: "center",
+            px: 3,
+            pb: 3,
+            pt: 1,
+            borderTop: "1px solid rgba(255, 255, 255, 0.15)",
+          }}
+        >
+          <Button
+            onClick={handleClosePopup}
+            sx={{
+              background: "linear-gradient(135deg, #5e00c2, #ff00d4)",
+              color: "#fff",
+              fontWeight: 600,
+              borderRadius: "30px",
+              px: 4,
+              py: 1.2,
+              textTransform: "none",
+              fontSize: "0.9rem",
+              "&:hover": {
+                background: "linear-gradient(135deg, #4400a2, #d100c1)",
+              },
+            }}
+          >
             Close
           </Button>
         </DialogActions>

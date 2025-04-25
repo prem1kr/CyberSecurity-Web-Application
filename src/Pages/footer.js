@@ -126,13 +126,52 @@ const Footer = () => {
       </Box>
 
       {/* Subscription Popup */}
-      <Dialog open={popupOpen} onClose={handleClose}>
-        <DialogTitle>Thanks for Subscribing!</DialogTitle>
-        <DialogContent>
-          <Typography>You’ll now receive the latest updates and news.</Typography>
+      <Dialog
+        open={popupOpen}
+        onClose={handleClose}
+        sx={{
+          '& .MuiDialog-paper': {
+            backgroundColor: '#1a1a2e', // Match footer background
+            borderRadius: '10px',
+            color: 'white',
+            padding: '20px',
+          },
+        }}
+      >
+        <DialogTitle
+          sx={{
+            textAlign: 'center',
+            color: '#3f82f7',
+            fontWeight: 'bold',
+          }}
+        >
+          Thanks for Subscribing!
+        </DialogTitle>
+        <DialogContent sx={{ textAlign: 'center' }}>
+          <Typography>
+            You’ll now receive the latest updates and news.
+          </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
+        <DialogActions
+          sx={{
+            justifyContent: 'center',
+            backgroundColor: '#1a1a2e',
+            borderRadius: '0 0 10px 10px',
+          }}
+        >
+          <Button
+            onClick={handleClose}
+            sx={{
+              background: 'linear-gradient(to right, #3f82f7, #e700ff)',
+              color: 'white',
+              fontWeight: 'bold',
+              '&:hover': {
+                background: 'linear-gradient(to right, #2b6fc0, #b300cc)',
+              },
+            }}
+          >
+            Close
+          </Button>
         </DialogActions>
       </Dialog>
     </Box>
