@@ -1,60 +1,108 @@
 
 # 🛡️ Cyber0Web – Cybersecurity Company Website
 
-**Cyber0Web** is a modern, responsive website built for a cybersecurity firm focused on protecting digital assets, IT infrastructure, and online identities. The website is designed to promote trust, highlight key services, and encourage clients to engage with your security solutions.
+**Cyber0Web** is a professionally crafted, responsive React-based website built for a cybersecurity company to showcase services, build trust, and generate leads.
 
 🌐 **Live Site**: [https://cyber0web.netlify.app](https://cyber0web.netlify.app)
 
 ---
 
-## 📌 Overview
+## 📁 Project Structure
 
-Cyber0Web represents a cybersecurity company offering professional services like:
 
-- Network Security
-- Endpoint Protection
-- Penetration Testing
-- Cloud Security
-- Incident Response & Recovery
+cyber0web/
+├── public/
+│   └── (Static assets like favicon, index.html)
+│
+├── src/
+│   ├── Components/
+│   │   └── Navbar.js
+│   │
+│   ├── Pages/
+│   │   ├── ContactForm.js           # Contact form component
+│   │   ├── FAQ.js                   # Frequently Asked Questions
+│   │   ├── Hero.js                  # Landing hero section
+│   │   ├── SecurityServicesPage.js  # List of security services
+│   │   ├── Testimonials.js          # Testimonials slider/content
+│   │   ├── Testimonials.css         # Styling for testimonials
+│   │   ├── WhatWeOffer.js           # List of offered solutions
+│   │   ├── WhyChooseUs.js           # Trust-building section
+│   │   ├── footer.js                # Footer of the website
+│   │   └── partners.js              # Technology or service partners
+│   │
+│   ├── assets/                      # Images, icons, logos, etc.
+│   ├── App.js                       # Root component and routing
+│   ├── index.js                     # Entry point
+│   ├── index.css                    # Global styles
+│   └── reportWebVitals.js          # Performance measurement (optional)
 
-This site acts as a digital front door to the company, establishing credibility and helping potential clients understand the importance of strong security posture in today’s digital age.
 
 ---
 
-## 🚀 Key Features
+## 🧠 Features
 
-- ✅ Clean, responsive design (mobile + desktop)
-- ✅ Modern layout with smooth navigation
-- ✅ Services section highlighting security offerings
-- ✅ "About Us" section introducing the company
-- ✅ Contact form for lead capture
-- ✅ Fast loading and optimized for SEO
+- ✅ Fully responsive layout
+- ✅ Built with React components for easy maintenance
+- ✅ Organized codebase for scalability
+- ✅ Professional services showcase
+- ✅ Clean and modern UI
+- ✅ Optimized for performance and SEO
 
 ---
 
-## 🖥️ Tech Stack
+## 🛠️ Tech Stack
 
-| Layer       | Technology            |
+| Layer       | Technology             |
 |-------------|------------------------|
-| Frontend    | HTML5, CSS3, JavaScript |
-| Frameworks  |  Tailwind CSS           |
-| Deployment  | [Netlify](https://netlify.com) |
+| Frontend    | React.js               |
+| Styling     | CSS (Modular and Global) |
+| Assets      | Custom images/icons    |
+| Deployment  | Netlify                |
 
 ---
 
-## 📁 Folder Structure
+## 🚀 Getting Started
 
+1. **Clone the Repository**
+```bash
+git clone https://github.com/your-username/cyber0web.git
+cd cyber0web
+````
 
+2. **Install Dependencies**
 
+```bash
+npm install
+```
 
+3. **Run Locally**
 
-## 🧠 Ideal Use Cases
+```bash
+npm start
+```
 
-This website is suitable for:
+The app will run on `http://localhost:3000`.
 
-- Cybersecurity startups
-- Ethical hacking service providers
-- IT security consultancies
-- Network audit firms
-- Freelancers offering penetration testing and cloud security
+---
+
+## 💡 Customization
+
+* You can edit the service listings in `SecurityServicesPage.js`
+* Add or change FAQs in `FAQ.js`
+* Customize company details in `Hero.js`, `WhyChooseUs.js`, and `ContactForm.js`
+* Add more testimonials in `Testimonials.js`
+* Update your logo, icons, and assets inside the `assets/` directory
+
+---
+
+## 🌍 Deployment
+
+This project is deployed using **Netlify**.
+
+1. Push your project to GitHub
+2. Go to [Netlify](https://netlify.com)
+3. Connect your repository and deploy
+4. Your live URL will be generated automatically
+
+---
 
