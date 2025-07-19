@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🛡️ Cyber0Web – Cybersecurity Company Website
 
-## Available Scripts
+**Cyber0Web** is a modern, responsive website built for a cybersecurity firm focused on protecting digital assets, IT infrastructure, and online identities. The website is designed to promote trust, highlight key services, and encourage clients to engage with your security solutions.
 
-In the project directory, you can run:
+🌐 **Live Site**: [https://cyber0web.netlify.app](https://cyber0web.netlify.app)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Cyber0Web represents a cybersecurity company offering professional services like:
 
-### `npm test`
+- Network Security
+- Endpoint Protection
+- Penetration Testing
+- Cloud Security
+- Incident Response & Recovery
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This site acts as a digital front door to the company, establishing credibility and helping potential clients understand the importance of strong security posture in today’s digital age.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ✅ Clean, responsive design (mobile + desktop)
+- ✅ Modern layout with smooth navigation
+- ✅ Services section highlighting security offerings
+- ✅ "About Us" section introducing the company
+- ✅ Contact form for lead capture
+- ✅ Fast loading and optimized for SEO
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🖥️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Layer       | Technology            |
+|-------------|------------------------|
+| Frontend    | HTML5, CSS3, JavaScript |
+| Frameworks  |  Tailwind CSS           |
+| Deployment  | [Netlify](https://netlify.com) |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🧠 Ideal Use Cases
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This website is suitable for:
 
-### Analyzing the Bundle Size
+- Cybersecurity startups
+- Ethical hacking service providers
+- IT security consultancies
+- Network audit firms
+- Freelancers offering penetration testing and cloud security
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
